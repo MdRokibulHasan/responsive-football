@@ -234,6 +234,7 @@ margin-right: 25px;
 
     .container{
         background-color: #2d25a0;
+        width: 100%;
         height: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -241,14 +242,13 @@ margin-right: 25px;
 
     }
     .half-width-image{
-        margin-top: 20%;
-        width: 329px;
-        height: 259.17px;
+        width: 100%;
+        height:auto;
         margin-bottom: 66px;
     }
     .half-width-image img{
-        width:329.01px;
-        height:259px;
+        width:100%;
+        height:auto;
     }
     
 /* players start */
@@ -259,10 +259,8 @@ margin-right: 25px;
         grid-template-columns: repeat(1,1fr);
     }
     .player-details{
-        margin: 0 auto;
-        margin-left:0;
-        width: 330px;
-        height: 474px;
+       width: 100%;
+       height: auto;
         background-color: white;
         margin-bottom: 20px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -276,9 +274,30 @@ margin-right: 25px;
     }
     /* Heighlits start  */
     .highlights{
+        width: 100%;
+        height:400px;
+       
         flex-direction: column;
-        margin: 10px 10px;
+        margin: auto;
+        grid-row-gap: 10px;
+    margin-left: 0px;
         
+    
+        
+    }
+
+    .match{
+            width: 100%;
+            height: auto;
+    }
+    .youtube-video iframe{
+        height: 300;
+        width: 340px;
+        padding-left: 2%;
+    }
+    .logo img{
+        width: 300px;
+    height: 80px;
     }
     
 }
@@ -320,6 +339,7 @@ margin-right: 25px;
     }
     .container{
         background-color: #2d25a0;
+        width:auto;
         height: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -327,7 +347,7 @@ margin-right: 25px;
 
     }
     .half-width-image{
-        margin-top: 20%;
+        
         width: 329px;
         height: 259.17px;
         margin-bottom: 66px;
@@ -336,6 +356,46 @@ margin-right: 25px;
         width:329.01px;
         height:259px;
     }
-    
+    .player{
+        display: grid;
+        margin-left: 0;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .player-details{
+        width: 100%;
+       height: auto;
+        background-color: white;
+        margin-bottom: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    }
+    .player-photo img{
+        padding: 5px;
+        width: 320px;
+        height: 256px;
+    }
+    .highlights{
+        width: 100%;
+        height:400px;
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+        margin: auto;
+        grid-row-gap: 10px;
+    margin-left: 0px;
+        
+    }
+    /* .match{
+        width: auto;
+        height: 100%;
+    } */
+    .upcomming-match{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .logo img{
+        width: 300px;
+    height: 80px;
+    }
 }
 
